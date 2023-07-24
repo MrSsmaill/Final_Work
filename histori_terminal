@@ -1,0 +1,26 @@
+827  cd Final_work/
+  828  cat >> Домашние_животные
+  829  cat Домашние_животные 
+  830  cat >> Вьючные_животные
+  831  cat Вьючные_животные
+  832  mkdir Животные
+  833  mv Вьючные_животные Друзья_человека
+  834  mv Друзья_человека Животные/
+  835  mv Домашние_животные Животные/
+  836  ll Животные/
+  837  tree 
+  838  sudo apt update 
+  839  sudo apt install mysql-server
+  840  sudo apt upgrade 
+  841  sudo mysql_secure_installation
+  842  dpkg -l 'b*'
+  843  dpkg -i debian-cd
+  844  sudo dpkg -i debian-cd
+  845  sudo dpkg --install debian-cd
+  846  sudo dpkg --install man-db
+  847  dpkg -i man-db_2.9.4-2_amd64.deb
+  848  sudo dpkg -i man-db_2.9.4-2_amd64.deb
+  849  sudo dpkg -P nginx-common 
+  850  sudo dpkg -r nginx-common 
+  851  sudo dpkg -r tree
+  852  history 
