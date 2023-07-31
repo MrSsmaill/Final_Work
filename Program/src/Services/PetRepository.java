@@ -39,8 +39,8 @@ public class PetRepository implements IRepository<Pet> {
                 resultSet = sqlSt.executeQuery(SQLstr);
                 while (resultSet.next()) {
 
-                    PetType type = PetType.getType(resultSet.getInt(1));
-                    int id = resultSet.getInt(2);
+                    PetType type = PetType.getType(resultSet.getInt(2));
+                    int id = resultSet.getInt(1);
                     String name = resultSet.getString(3);
                     LocalDate birthday = resultSet.getDate(4).toLocalDate();
 
@@ -193,7 +193,7 @@ public class PetRepository implements IRepository<Pet> {
     public static Connection getConnection() throws SQLException, IOException {
 
         Properties props = new Properties();
-        try (FileInputStream fis = new FileInputStream("src/Resources/database.properties")) {
+        try (FileInputStream fis = new FileInputStream("Program/src/Resources/database.properties")) {
 
             props.load(fis);
             String url = props.getProperty("url");

@@ -12,6 +12,12 @@ public class PetCreator extends Creator {
                 return new Dog();
             case Hamster:
                 return new Hamster();
+            case Horse:
+                return new Horse();
+            case Camel:
+                return new Camel();
+            case Donkeys:
+                return new Donkeys();
         }
         return null;
     }

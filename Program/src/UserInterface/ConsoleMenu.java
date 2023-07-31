@@ -1,9 +1,11 @@
 package UserInterface;
 
-import java.util.Scanner;
-import Controller.*;
+import Controller.Counter;
+import Controller.PetController;
 import Exceptions.UncorrectDataException;
 import Model.PetType;
+
+import java.util.Scanner;
 
 public class ConsoleMenu {
 
@@ -85,7 +87,7 @@ public class ConsoleMenu {
     }
 
     private PetType menuChoice(Scanner in) {
-        System.out.println("Какое животное добавить:\n1 - Кошка\n2 - Собака\n3 - Хомяк\n0 - Возврат в основное меню");
+        System.out.println("Какое животное добавить:\n1 - Кошка\n2 - Собака\n3 - Хомяк\n4 - Лошадь\n5 - Верблюд\n6 - Осел\n0 - Возврат в основное меню");
 
         while (true) {
             String key = in.next();
@@ -96,6 +98,12 @@ public class ConsoleMenu {
                     return PetType.Dog;
                 case "3":
                     return PetType.Hamster;
+                case "4":
+                    return PetType.Horse;
+                case "5":
+                    return PetType.Camel;
+                case "6":
+                    return PetType.Donkeys;
                 case "0":
                     return null;
                 default:
